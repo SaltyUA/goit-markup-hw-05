@@ -106,6 +106,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--dark-color);
   position: relative;
+  transition: color 250ms var(--cubic);
 }
 
 .navigation-link.active-page {
@@ -121,7 +122,7 @@ img {
   border-radius: 2px;
   position: absolute;
   bottom: -28px;
-  transform: scale(100%);
+  transform: scaleX(100%);
 }
 
 .navigation-link:is(:hover, :focus) {
@@ -159,6 +160,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  transition: color 250ms var(--cubic);
 }
 
 .address-link:is(:hover, :focus) {
@@ -207,12 +209,11 @@ img {
   height: 56px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms var(--cubic);
 }
 
 .hero-btn:is(:hover, :focus) {
-  background: var(--pressed-state-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  background-color: var(--pressed-state-color);
 }
 
 /* ----------------------------FEATURES-------------------------------------- */
@@ -353,6 +354,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms var(--cubic);
 }
 
 .team-soc-icon {
@@ -392,10 +394,12 @@ img {
   justify-content: center;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
+  transition: border 250ms var(--cubic);
 }
 
 .customers-icon {
   fill: var(--subtle-text-color);
+  transition: fill 250ms var(--cubic);
 }
 
 .customers-link:is(:hover, :focus) {
@@ -480,6 +484,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms var(--cubic);
 }
 
 .footer-soc-icon {
@@ -489,6 +494,7 @@ img {
 .footer-soc-link:is(:hover, :focus) {
   background-color: var(--success-color);
 }
+
 /* ----------------------------PORTFOLIO-------------------------------------- */
 
 .portfolio {
@@ -518,13 +524,14 @@ img {
   color: var(--primary-brand-color);
   cursor: pointer;
   padding: 12px 24px;
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic),
+    color 250ms var(--cubic);
 }
 
 .filters-btn:is(:hover, :focus) {
   background-color: var(--pressed-state-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
   color: var(--white-background-color);
 }
 
@@ -562,7 +569,8 @@ img {
   left: 0;
 
   transform: translateY(100%);
-  transition: transform 250ms var(--cubic);
+  transition: transform 250ms var(--cubic), border 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .projects-item-text {
