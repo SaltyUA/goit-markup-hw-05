@@ -542,6 +542,7 @@ img {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
+
 .projects-item {
   background-color: var(--white-background-color);
 }
